@@ -26,6 +26,7 @@ header {
 
 nav {
   display: flex;
+  overflow: hidden;
 }
 
 nav ul {
@@ -47,6 +48,9 @@ nav a {
   display: inline-block;
 }
 
+nav a:link {
+  color: #8F1D24
+}
  nav a:visited {
   color: #8F1D24;
 }
@@ -54,6 +58,13 @@ nav a {
 nav a:hover {
   background-color: #8F1D24;
   color: #ffffff;
+}
+
+nav a:active {
+  background-color: #ffffff;
+  color: #D96C74;
+  border: 1px solid #D96C74;
+
 }
 
 nav img {

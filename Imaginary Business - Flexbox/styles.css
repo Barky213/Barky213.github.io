@@ -1,0 +1,205 @@
+* {
+
+  /*   border: 1px solid black;  */
+  scroll-padding-top: 102px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+}
+
+ /*navbar*/
+
+header {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  border-bottom: 1px solid #8F1D24;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  width: 100%;
+}
+
+header li {
+  display: inline;
+  padding: 20px 10px;
+  margin-left: 10px;
+
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ nav a:visited {
+  color: #8F1D24;
+}
+
+nav a:hover {
+  background-color: #8F1D24;
+  color: #ffffff;
+}
+
+nav img {
+  height: 5rem;
+}
+
+/*banner*/
+
+.banner {
+  margin-top: 92px;
+  background-image: url("../Images/jenny-hill-aJWwvXbMM8E-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.banner-text {
+  background-color: #8F1D24;
+  width: 40%;
+  text-align: center;
+  margin-left: 5rem;
+  padding: 30px;
+  position: relative;
+  top: 20%;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+/*Mission*/
+
+.mission-statement {
+  text-align: center;
+  margin: 92px 5rem 92px 5rem;
+  border: 1px solid #D96C74;
+  padding: 40px;
+  background-color: #D96C74;
+  border-radius: 20px;
+
+}
+
+/*Products*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  /*   background-color: #388C4D;  */
+  background-image: url("../Images/shane-rounce-03cHOSwUXqs-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-container {
+  width: 100px;
+  margin: 92px 40px 35px 40px;
+  flex: 1 1 100px;
+  background-color: #ffffff;
+  max-width: 200px;
+  min-width: 150px;
+  border: 1px solid #D96C74;
+  border-radius: 20px;
+}
+
+.product-container img {
+  width: 100px;
+  height: 200px;
+}
+
+.products a {
+  text-decoration: none;
+  display: inline-block;
+  color: #8F1D24;
+  width: 100%;
+}
+
+.products a:visited {
+  color: #8F1D24;
+}
+
+.products a:hover {
+  background-color: #8F1D24;
+  color: #ffffff;
+
+}
+
+
+
+/*athletes*/
+
+#athletes {
+  margin-top: 92px;
+}
+
+.athletes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #8F1D24;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+.athlete-container img {
+  width: 300px;
+  border: 1px solid #D96C74;
+  border-radius: 20px;
+}
+
+.athlete-container {
+width: 320px;
+}
+
+/*footer*/
+
+footer img {
+  height: 8rem;
+}
+
+footer {
+  padding:20px 0;
+  border-top: 1px solid #D96C74;
+}
+
+/*text*/
+
+p {
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+  font-family: 'Macondo', cursive;
+  font-size: 48px;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
+
+h2, h3 {
+  font-family: 'BIZ UDPMincho', serif;
+}

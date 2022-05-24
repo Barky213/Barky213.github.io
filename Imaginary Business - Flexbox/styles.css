@@ -108,7 +108,7 @@ nav img {
   width: 100%;
   text-align: center;
   /*   background-color: #388C4D;  */
-  background-image: url("../Images/shane-rounce-03cHOSwUXqs-unsplash.jpg");
+  background-image: url('./Images/shane-rounce-03cHOSwUXqs-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

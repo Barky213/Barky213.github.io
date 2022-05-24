@@ -229,6 +229,7 @@ h2, h3 {
     justify-content: space-around;
   }
   nav p {
-    font-size: 18px;
+    font-size: 32px;
+    font-weight: bold;
   }
 }

@@ -134,6 +134,7 @@ nav img {
   min-width: 150px;
   border: 1px solid #D96C74;
   border-radius: 20px;
+  overflow:hidden;
 }
 
 .product-container img {

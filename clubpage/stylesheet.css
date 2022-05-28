@@ -1,0 +1,301 @@
+@font-face {
+  font-family: crusifixion;
+  src: url(heavymetal-chess-club-font-collection/crucifixion-21902/CrucifixionRegular-xKd8.ttf);
+
+}
+
+@font-face {
+  font-family: chess;
+  src: url(heavymetal-chess-club-font-collection/etaoin-shrdlu-14856/EtaoinShrdlu-noRP.ttf);
+}
+
+@font-face {
+  font-family: evilempire;
+  src: url(heavymetal-chess-club-font-collection/EvilEmpire-4BBVK.ttf);
+}
+
+@font-face {
+  font-family: skrady;
+  src: url(heavymetal-chess-club-font-collection/fty-skradjhuwn-ncv-font/FtySkradjhuwnNcv1-6dmo.ttf);
+}
+
+/* General */
+html {
+  font-size: 18px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #850505;
+
+}
+
+/* header */
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 40px);
+  justify-items: center;
+  background-image: url(Images/felix-mittermeier-nAjil1z3eLk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 2px solid #850505;
+
+}
+
+
+.metalhead {
+  font-family: crusifixion;
+  font-size: 5rem;
+  text-shadow: 0 0 3px #FF0000;
+
+}
+
+.chesshead {
+  font-family: chess;
+  font-size: 4rem;
+  margin-top: 4rem;
+  color: #ffff33;
+
+}
+
+/* grid positioning */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 2fr 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar main quotes"
+    "sidebar main quotes"
+    "sidebar events events"
+    "footer footer footer";
+  grid-gap: 1rem ;
+  background-color: #850505;
+  margin-top: 1rem;
+}
+
+/* sidebar*/
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #353935;
+  color: #ffff33;
+  font-family: evilempire, cursive;
+  font-size: 2rem;
+}
+
+.sidebar a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+
+
+}
+
+.sidebar a:hover {
+  background-color: #850505;
+  color: #ffff33;
+  padding-top: 1rem;
+}
+
+.sidebar a:active {
+  background-color:#ffff33;
+  color: #850505;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 0.4rem 0.8rem 0;
+  width: 100%;
+
+}
+
+nav {
+  position: sticky;
+  top: 1rem;
+  overflow: hidden;
+}
+
+/* footer */
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #353935;
+  padding-top: 2rem;
+  text-align: center;
+
+}
+
+footer img {
+  width: 3rem;
+  height: 5rem;
+  margin-left: 2rem;
+}
+
+/* main article */
+
+main {
+  grid-area: main;
+  background-image: url(Images/freeimage-5909459-web.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+}
+
+main h2 {
+  font-family: skrady, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* quotes section */
+
+.quotes {
+  grid-area: quotes;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding-top: 1rem;
+  font-family: 'Inter',sans-serif;
+
+}
+
+.quotes img{
+  height: 12rem;
+  border-radius: .5rem;
+}
+
+cite {
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+/* events */
+
+.events {
+  grid-area: events;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(#000000, #353935 );
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.events h3 {
+  color: #ffff33;
+  font-family: skrady, sans-serif;
+  font-size: 2rem;
+}
+
+.event-container {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.manc {
+  border-left: 1px solid #353935;
+  border-right: 1px solid #353935;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+  font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .grid-container {
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "sidebar quotes quotes"
+    "sidebar events events"
+    "footer footer footer";
+  }
+  .quotes {
+    display: flex;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .quotes img {
+    height: 10rem;
+  }
+
+
+
+}
+
+@media only screen and (max-width:800px) {
+  html {
+    font-size: 12px;
+  }
+  .grid-container {
+    grid-template-rows: 0.5fr 3.5fr 1.5fr 1.5fr .5fr;
+  }
+
+  .metalhead {
+    font-size: 4rem;
+  }
+  .chesshead {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+}
+
+@media only screen and (max-width:650px) {
+  .grid-container {
+    grid-template-areas:
+    "sidebar sidebar sidebar"
+    "header header header"
+    "main main main"
+    "quotes quotes quotes"
+    "events events events"
+    "footer footer footer";
+    grid-template-rows: 0.2fr 0.5fr 3fr 2fr 2fr 0.2fr;
+  }
+  .sidebar ul{
+    display: flex;
+  }
+
+  .sidebar li,a {
+    width: 20%;
+  }
+
+}
+
+@media only screen and (max-width:430px) {
+  html {
+    font-size: 10px;
+  }
+  nav{
+    margin-left: -1.2rem;
+  }
+
+}

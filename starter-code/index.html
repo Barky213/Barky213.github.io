@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts.js" defer></script>
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/desktop/logo.svg" alt="company logo" />
+    </header>
+    <main>
+      <div class="image-container">
+        <img src="assets/desktop/image-host.jpg" alt=""/>
+      </div>
+      <div class="content">
+        <h1>Publish your podcasts <span>everywhere.</span></h1>
+
+        <p>
+          Upload your audio to Pod with a single click. We'll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+
+        <form action="#" method="GET">
+           <button type="submit" id="submit">Request access</button>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+         
+          <p id="alert">Oops! Please add your email</p>
+        </form>
+        <div class="socials">
+          <img src="assets/desktop/spotify.svg" alt="Spotify" class="spotify" />
+          <img
+            src="assets/desktop/apple-podcast.svg"
+            alt="Apple podcasts"
+            class="apple"
+          />
+          <img
+            src="assets/desktop/google-podcasts.svg"
+            alt="Google podcasts"
+            class="google"
+          />
+          <img
+            src="assets/desktop/pocket-casts.svg"
+            alt="Pocket Casts"
+            class="pocket"
+          />
+        </div>
+      </div>
+      <div class="dotty">
+        <img src="assets/desktop/bg-pattern-dots.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
